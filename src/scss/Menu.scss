@@ -1,0 +1,68 @@
+%Contents-extention{
+    position:absolute;
+    font-size: 35px;
+    p{
+        margin: 50px;
+        cursor: pointer;
+    }
+}
+
+
+#Menu {
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#MenuPic{
+    position: relative;
+    overflow:hidden;
+    height:100vh;
+    float: right;
+    zoom:1.0;
+}
+
+#Contents{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+#MenuContents1{
+    @extend %Contents-extention;
+    left:420px;
+}
+
+#MenuContents2{
+    @extend %Contents-extention;
+    color:white;
+    right:320px;
+}
+
+#alt{
+    position: absolute;
+    bottom: 0;
+    left:350px;
+    font-size: 13px;
+}
+
+#ArrowHead{
+    position: absolute;
+    bottom: 65px;    
+    left:680px;
+
+}
+#ArrowTail{
+    position: absolute;
+    bottom:60px;
+    left:645px;
+}
+
+
+
+
+
+
+
+
