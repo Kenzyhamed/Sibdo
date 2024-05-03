@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
 import '../scss/MainPage.scss';
 import ArrowHead from '../photos/ArrowHead.png';
 import MainLogo from '../photos/MainLogo.png';
@@ -9,20 +9,22 @@ import Menu from '../js/Menu';
 import currentFlag from '../photos/currentFlag.png';
 
 export default function MainPage() {
+    const [openMP, setOpenMP] = useState(false);
+
     function openNav() {
-        document.getElementById("Menu").style.display = "block";
+        setOpenMP(true)
     }
     
     
     return (<>
 
-            <Menu id="Menu"/>
+            <Menu open={openMP} setOpen={setOpenMP}/>
             <div id="main">
             <div id="mainpage">
                 <section id="page1">
                     <div id="maintext1">
                         <img id="Arrow" src={ArrowHead} alt="Arrow Head"/>
-                        <p id="menuclick" onClick={openNav}>Click Here to Access Menu</p>
+                        <p id="menuclick" onClick={() => setOpenMP(!openMP)}>Click Here to Access Menu</p>
                         <p id="info">A tourist location in east Darfur<br/>known to host many historical &<br/> cultural events</p>
                     </div>
                     <img id="mainlogo" src={MainLogo} alt="Main Logo" onClick={openNav}/>
