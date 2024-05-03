@@ -3,34 +3,34 @@ import SibdoO from '../photos/SibdoO.png'
 import SibdoS from '../photos/SibdoS.png'
 
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function WhoAreWe() {
-    
     const [name, setName] = useState(false);
     const [company, setCompany] = useState(false);
     const [vision, setVision] = useState(false);
     const [mission, setMission] = useState(false);
 
     const handleOptionClick = (option) => {
-        if(option == 'name'){
+        if(option === 'name'){
             setName(true);
             setCompany(false);
             setVision(false);
             setMission(false); 
         }
-        else if(option == 'company'){
+        else if(option === 'company'){
             setName(false);
             setCompany(true);
             setVision(false);
             setMission(false); 
         }
-        else if(option == 'vision'){
+        else if(option === 'vision'){
             setName(false);
             setCompany(false);
             setVision(true);
             setMission(false); 
         }
-        else if(option == 'mission'){
+        else if(option === 'mission'){
             setName(false);
             setCompany(false);
             setVision(false);
@@ -39,12 +39,14 @@ export default function WhoAreWe() {
 
     };
 
+    const navigate = useNavigate();
+
     return (
         <div id="background">
-            {/* <div id="menulogo">
-                <img src={SibdoS}/>
-                <img src={SibdoO}/>
-            </div> */}
+            <div id="menulogo">
+                <img onClick={()=>navigate("/Menu")} id= "S" src={SibdoS}/>
+                <img onClick={()=>navigate("/MainPage")} id= "O" src={SibdoO}/>
+            </div>
             <div id="options">
                 <p id="TheName" className={name ? 'selectedN' : ''} onClick={() => handleOptionClick('name')}>The Name</p>
                 <p id="TheCompany" className={company ? 'selectedC' : ''} onClick={() => handleOptionClick('company')}>The Company</p>

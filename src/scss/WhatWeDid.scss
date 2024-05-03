@@ -1,0 +1,49 @@
+
+#row1{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+img{
+    
+    zoom:0.85;
+    margin: 25px;
+}
+
+#row2 {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    img{
+        display: inline; 
+        width:fit-content;
+
+    }
+    p{
+        display: inline-block;
+        width:100px;
+    }
+}
+
+#row3{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+#row4{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    
+    img{
+        display: inline; 
+        width:fit-content;
+
+    }
+}
+
+#row5{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}

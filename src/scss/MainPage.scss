@@ -1,3 +1,8 @@
+
+#Menu {
+    display: none;
+
+}
 #main {
     position: fixed;
     width: 100%;
@@ -55,10 +60,12 @@
         filter: brightness(4);
         margin: auto;
         padding:0;
+        cursor: pointer;
     
     
     
     }
+
 
     #maintext1{
         width:100%;
@@ -70,8 +77,8 @@
     
         #menuclick{
             position: absolute;
-            bottom: 90px; /* Adjust bottom positioning */
-            right: 950px; /* Adjust right positioning */
+            bottom: 90px;
+            right: 950px;
             font-size: 20px;
             
         }
@@ -100,6 +107,19 @@
         background-size: cover;
     }
     
+    #maintext2{
+        color: white;
+        font-size: 70px;
+        margin: auto;
+        padding:0;
+        p{
+            margin: 0;
+            padding:10;
+            img{
+                zoom:.9;
+            } 
+        }
+    }
     #page3 {
         overflow: hidden;
         #right{
@@ -113,17 +133,28 @@
     }
     
     
-    #maintext2{
+    #maintext3{
         color: white;
-        font-size: 70px;
-        margin: auto;
+        font-size: 50px;
+        margin: 0;
         padding:0;
-        p{
-            margin: 0;
-            padding:10;
-            img{
-                zoom:.9;
-            } 
+        z-index: 1;
+        position: absolute;
+        width:100%;
+        height: 100vh;
+        #WWA{
+            position: absolute;
+            left:0;
+            top:100px;
+            margin: 30px;
+            padding:0;
+        }
+        #WWD{
+            position: absolute;
+            right:0;
+            top:100px;
+            margin: 30px;
+            padding:0;
         }
     }
 

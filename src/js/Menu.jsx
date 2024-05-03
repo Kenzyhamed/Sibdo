@@ -3,7 +3,12 @@ import ArrowHead from '../photos/ArrowHead.png';
 import ArrowTail from '../photos/ArrowTail.png';
 import MenuPic from '../photos/MenuPic.png';
 export default function Menu() {
+
+    function closeNav() {
+        document.getElementById("Menu").style.display = "none";
+    }
     return <div id="Menu">
+        <p id="close" onClick={closeNav()}>X</p>
         <img id= "MenuPic" src={MenuPic}/>
         <div id="Contents">
             <div id="MenuContents1">
