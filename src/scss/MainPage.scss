@@ -90,10 +90,10 @@
 
             
         }
-        #Arrow{
+        #MainArrow{
             position: absolute;
-            bottom: 100px; /* Adjust bottom positioning */
-            right: 625px; /* Adjust right positioning */
+            bottom: 80px; /* Adjust bottom positioning */
+            right: 600px; /* Adjust right positioning */
             font-size: 20px;
             zoom:1.4;
 
@@ -112,14 +112,17 @@
         font-size: 70px;
         margin: auto;
         padding:0;
-        p{
+        #Writtingmain2{
             margin: 0;
             padding:10;
-            img{
-                zoom:.9;
+            #main2images{
+
+                padding:0;
+                margin:0;
             } 
         }
     }
+    
     #page3 {
         overflow: hidden;
         #right{
@@ -175,6 +178,7 @@
                 display: inline;
                 margin: 60px;
                 font-size: 20px;
+                cursor: pointer;
             }
         }
     }

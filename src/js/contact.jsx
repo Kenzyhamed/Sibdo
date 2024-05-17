@@ -1,8 +1,20 @@
 import '../scss/contact.scss';
 import contactpic from "../photos/contacts.png"
-
+import SibdoO from '../photos/SibdoO.png'
+import SibdoS from '../photos/SibdoS.png'
+import React, { useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
+import Menu from '../js/Menu';
 export default function Contact() {
-    return <>
+    const [openMP, setOpenMP] = useState(false);
+
+    const navigate = useNavigate();
+    return(<>
+        <Menu open={openMP} setOpen={setOpenMP}/>
+        <div id="menulogoC">
+            <img onClick={() => setOpenMP(!openMP)} id= "S" src={SibdoS}/>
+            <img onClick={()=>navigate("/MainPage")} id= "O" src={SibdoO}/>
+        </div>
         <div id="contact1">
             <p id="title">Email</p>
             <p>sibdo.sd@gmail.com</p>
@@ -17,7 +29,6 @@ export default function Contact() {
             <p>Twitter</p>
             <p>TikTok</p>
             <p>Facebook</p>
-        </div>
-
-    </>
+        </div></>
+  )
   }

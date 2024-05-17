@@ -1,3 +1,5 @@
+
+
 #contact1 {
     position: absolute;
     left:0;
@@ -41,6 +43,18 @@
     }
 
 }
+#menulogoC {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  
+    img {
+      cursor: pointer;
+      zoom: 0.1;
+    }
+  }
 
 
 

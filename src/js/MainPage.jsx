@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import '../scss/MainPage.scss';
 import ArrowHead from '../photos/ArrowHead.png';
 import MainLogo from '../photos/MainLogo.png';
@@ -9,11 +10,9 @@ import Menu from '../js/Menu';
 import currentFlag from '../photos/currentFlag.png';
 
 export default function MainPage() {
+    const navigate = useNavigate();
     const [openMP, setOpenMP] = useState(false);
 
-    function openNav() {
-        setOpenMP(true)
-    }
     
     
     return (<>
@@ -23,25 +22,25 @@ export default function MainPage() {
             <div id="mainpage">
                 <section id="page1">
                     <div id="maintext1">
-                        <img id="Arrow" src={ArrowHead} alt="Arrow Head"/>
-                        <p id="menuclick" onClick={() => setOpenMP(!openMP)}>Click Here to Access Menu</p>
+                        <img id="MainArrow" src={ArrowHead} alt="Arrow Head"/>
+                        <p id="menuclick" >Click Here to Access Menu</p>
                         <p id="info">A tourist location in east Darfur<br/>known to host many historical &<br/> cultural events</p>
                     </div>
-                    <img id="mainlogo" src={MainLogo} alt="Main Logo" onClick={openNav}/>
+                    <img id="mainlogo" src={MainLogo} alt="Main Logo" onClick={() => setOpenMP(!openMP)}/>
                 </section>
 
                 <section id="page2">
                     <div id="maintext2">
-                        <p>MADE IN</p>
-                        <p>SUDAN</p>
-                        <p>BY <img src={currentFlag} alt="Current Flag"/></p>
-                        <p>FOR <img src={oldFlag} alt="Old Flag"/></p>
+                        <p id="Writtingmain2">MADE IN</p>
+                        <p id="Writtingmain2">SUDAN</p>
+                        <p id="Writtingmain2">BY <img id="main2images"src={currentFlag} alt="Current Flag"/></p>
+                        <p id="Writtingmain2">FOR <img id="main2images" src={oldFlag} alt="Old Flag"/></p>
                     </div>
                 </section>
 
                 <section id="page3">
-                    <img id="left" src={Left} alt="Left Arrow"/>
-                    <img id="right" src={Right} alt="Right Arrow"/>
+                    <img id="left" src={Left} alt="Left"/>
+                    <img id="right" src={Right} alt="Right"/>
                     <div id="maintext3">
                         <p id="WWA">Who<br/>We<br/>Are</p>
                         <p id="WWD">What<br/>We<br/>Do</p>
@@ -50,10 +49,10 @@ export default function MainPage() {
                 
                 <footer id="footer">
                     <ul>
-                        <li>Contact</li>
+                        <li onClick={() => navigate('/contact')}>Contact</li>
                         <li>Careers</li>
                         <li>Initiatives</li>
-                        <li>Work</li>
+                        <li> Work</li>
                     </ul>
                 </footer>
             </div>

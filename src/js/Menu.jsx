@@ -3,8 +3,11 @@ import ArrowHead from "../photos/ArrowHead.png";
 import ArrowTail from "../photos/ArrowTail.png";
 import MenuPic from "../photos/MenuPic.png";
 import React, { useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 
 export default function Menu({ open, setOpen }) {
+  const navigate = useNavigate();
+
   useEffect(() => {
     const menuElement = document.getElementById("Menu");
     if (open) {
@@ -30,14 +33,14 @@ export default function Menu({ open, setOpen }) {
       <img id="MenuPic" src={MenuPic} />
       <div id="Contents">
         <div id="MenuContents1">
-          <p>Who Are We</p>
-          <p>Who We Do </p>
-          <p>Companies</p>
+          <p onClick={()=>navigate("/WhoAreWe")}>Who Are We</p>
+          <p onClick={()=>navigate("/WhatWeDid")}>What We Do </p>
+          <p onClick={()=>navigate("/Companies")}>Companies</p>
         </div>
         <div id="MenuContents2">
           <p>Initiatives</p>
           <p>Work With Us </p>
-          <p>Talk To Us</p>
+          <p onClick={()=>navigate("/Contact")}>Talk To Us</p>
         </div>
       </div>
       <img id="ArrowHead" src={ArrowHead} />
