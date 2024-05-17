@@ -1,4 +1,5 @@
 import '../scss/Companies.scss';
+import React from 'react';
 import sibdoPic from '../photos/sibdoPic.png';
 export default function Companies() {
     return <>

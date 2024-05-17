@@ -1,5 +1,6 @@
 import '../scss/WorkWithUs.scss';
 import sibdoPic from '../photos/sibdoPic.png';
+import React from 'react';
 export default function WorkWithUs() {
     return <>
         <div id="text">

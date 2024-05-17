@@ -2,7 +2,7 @@ import '../scss/contact.scss';
 import contactpic from "../photos/contacts.png"
 import SibdoO from '../photos/SibdoO.png'
 import SibdoS from '../photos/SibdoS.png'
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import Menu from '../js/Menu';
 export default function Contact() {

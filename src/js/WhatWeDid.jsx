@@ -1,3 +1,4 @@
+import React from 'react';
 import '../scss/WhatWeDid.scss';
 import AlQasr from '../photos/Al-Qasr.png';
 import WNB from '../photos/WNB.png';
