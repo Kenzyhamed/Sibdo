@@ -13,7 +13,7 @@ export default function Contact() {
         <Menu open={openMP} setOpen={setOpenMP}/>
         <div id="menulogoC">
             <img alt ="S" onClick={() => setOpenMP(!openMP)} id= "S" src={SibdoS}/>
-            <img alt ="O" onClick={()=>navigate("/MainPage")} id= "O" src={SibdoO}/>
+            <img alt ="O" onClick={()=>navigate("/")} id= "O" src={SibdoO}/>
         </div>
         <div id="contact1">
             <p id="title">Email</p>
