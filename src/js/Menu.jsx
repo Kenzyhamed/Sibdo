@@ -38,8 +38,8 @@ export default function Menu({ open, setOpen }) {
           <p onClick={()=>navigate("/Companies")}>Companies</p>
         </div>
         <div id="MenuContents2">
-          <p>Initiatives</p>
-          <p>Work With Us </p>
+          <p onClick={()=>navigate("/WhatWeDid")}>Initiatives</p>
+          <p onClick={()=>navigate("/WorkWithUs")}>Work With Us </p>
           <p onClick={()=>navigate("/Contact")}>Talk To Us</p>
         </div>
       </div>
