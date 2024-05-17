@@ -16,23 +16,23 @@ export default function WhatWeDid() {
         </div>
         <p>Al-Qasr Office Building</p>
         <div id="row2">
-            <img src={WNB}/>
-            <img src={RiyadhResidence}/>
+            <img src={WNB} alt ="WNB"/>
+            <img src={RiyadhResidence} alt ="RiyadhResidence"/>
         </div>
         <p>Workers National Bank</p>
         <p>Riyadh Resience</p>
         <div id="row3">
-            <img src={AlShamal}/>
+            <img src={AlShamal} alt ="AlShamal"/>
         </div>
         <p>A-Shamal Islamic Bank</p>
         <div id="row4">
-            <img src={Hilton}/>
-            <img src={RiyadhResidence2}/>
+            <img src={Hilton} alt ="Hilton"/>
+            <img src={RiyadhResidence2} alt ="RiyadhResidence2"/>
         </div>
         <p>Hilton Hotel</p>
         <p>Riyadh Residence</p>
         <div id="row5">
-            <img src={UofK}/>
+            <img src={UofK} alt ="UofK"/>
         </div>
         <p>University of Khartoum; Faculty of Medicine Mosque</p>
 

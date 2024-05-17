@@ -12,8 +12,8 @@ export default function Contact() {
     return(<>
         <Menu open={openMP} setOpen={setOpenMP}/>
         <div id="menulogoC">
-            <img onClick={() => setOpenMP(!openMP)} id= "S" src={SibdoS}/>
-            <img onClick={()=>navigate("/MainPage")} id= "O" src={SibdoO}/>
+            <img alt ="S" onClick={() => setOpenMP(!openMP)} id= "S" src={SibdoS}/>
+            <img alt ="O" onClick={()=>navigate("/MainPage")} id= "O" src={SibdoO}/>
         </div>
         <div id="contact1">
             <p id="title">Email</p>
@@ -21,7 +21,7 @@ export default function Contact() {
             <p>+1 (587) 917-2367</p>
         </div>
         <div id="contactImage">
-            <img src={contactpic}/>
+            <img alt ="contactpic" src={contactpic}/>
         </div>
         <div id="contact2">        
             <p id="title">Social Media</p>

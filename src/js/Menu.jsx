@@ -30,7 +30,7 @@ export default function Menu({ open, setOpen }) {
       <p id="close" onClick={closeNav}>
         X
       </p>
-      <img id="MenuPic" src={MenuPic} />
+      <img id="MenuPic"  alt ="menupic" src={MenuPic} />
       <div id="Contents">
         <div id="MenuContents1">
           <p onClick={()=>navigate("/WhoAreWe")}>Who Are We</p>
@@ -43,8 +43,8 @@ export default function Menu({ open, setOpen }) {
           <p onClick={()=>navigate("/Contact")}>Talk To Us</p>
         </div>
       </div>
-      <img id="ArrowHead" src={ArrowHead} />
-      <img id="ArrowTail" src={ArrowTail} />
+      <img id="ArrowHead"  alt="arrowhead"src={ArrowHead} />
+      <img id="ArrowTail" alt="arrowtail" src={ArrowTail} />
       <div id="alt">
         <p>Adam Musa Madibo;</p>
         <p>

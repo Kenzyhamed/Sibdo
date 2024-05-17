@@ -4,7 +4,7 @@ export default function WorkWithUs() {
     return <>
         <div id="text">
             <span>
-            <img src={sibdoPic}/>
+            <img  alt ="Sibdo" src={sibdoPic}/>
             <p>is looking for individuals who are passionate about architecture and the built <br></br>world.</p>
             <p>Currently all opportunities available are part-time unpaid positions.</p>
             <p>High school, undergrad & graduate positions are open to those who would like<br></br>to make a change</p>

@@ -47,8 +47,8 @@ export default function WhoAreWe() {
         <div id="background">
         <Menu open={openMP} setOpen={setOpenMP}/>
         <div id="menulogo">
-            <img onClick={() => setOpenMP(!openMP)} id= "S" src={SibdoS}/>
-            <img onClick={()=>navigate("/MainPage")} id= "O" src={SibdoO}/>
+            <img  alt ="S" onClick={() => setOpenMP(!openMP)} id= "S" src={SibdoS}/>
+            <img alt="O" onClick={()=>navigate("/MainPage")} id= "O" src={SibdoO}/>
         </div>
             <div id="options">
                 <p id="TheName" className={name ? 'selectedN' : ''} onClick={() => handleOptionClick('name')}>The Name</p>
