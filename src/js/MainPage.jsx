@@ -4,8 +4,6 @@ import '../scss/MainPage.scss';
 import ArrowHead from '../photos/ArrowHead.png';
 import MainLogo from '../photos/MainLogo.png';
 import oldFlag from '../photos/oldFlag.png';
-import Right from '../photos/Right.png';
-import Left from '../photos/Left.png';
 import Menu from '../js/Menu';
 import currentFlag from '../photos/currentFlag.png';
 
@@ -39,8 +37,8 @@ export default function MainPage() {
                 </section>
 
                 <section id="page3">
-                    <img id="left" src={Left} alt="Left"/>
-                    <img id="right" src={Right} alt="Right"/>
+                    <div id="left"></div>
+                    <div id="right"></div>
                     <div id="maintext3">
                         <p id="WWA">Who<br/>We<br/>Are</p>
                         <p id="WWD">What<br/>We<br/>Do</p>

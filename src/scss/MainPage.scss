@@ -124,42 +124,62 @@
     }
     
     #page3 {
-        overflow: hidden;
-        #right{
-            position: absolute;
-            right:0;
-            zoom:1.2;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+        height: 100vh; 
+        
+        #right, #left {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
         }
-        #left{
-            position: absolute;
-            left:0;
-
+        
+        #right {
+            grid-column: 2;
+            grid-row: 1;
+            background-image: url('../photos/Right.png');
         }
+        
+        #left {
+            grid-column: 1;
+            grid-row: 1;
+            background-image: url('../photos/Left.png');
+        }
+        
     }
+
+    
+
     
     
     #maintext3{
         color: white;
-        font-size: 50px;
+        font-size: 55px;
         margin: 0;
         padding:0;
         z-index: 1;
         position: absolute;
         width:100%;
         height: 100vh;
+
         #WWA{
             position: absolute;
-            left:0;
+            left:560px;
             top:100px;
             margin: 30px;
             padding:0;
+
         }
         #WWD{
             position: absolute;
-            right:0;
-            top:100px;
-            margin: 30px;
+            right:550px;
+            bottom:0px;
+            margin: 20px;
             padding:0;
+
         }
     }
 

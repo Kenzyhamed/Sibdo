@@ -4,6 +4,7 @@
     justify-content: center;
     min-height: 100vh;
     width:100%;
+    z-index: -1;
 
     p {
         margin:10px;
@@ -16,8 +17,8 @@
     }
     img{
         position: absolute;
-        top: 160px;
-        left:130px;
+        top: 265px;
+        left:290px;
     }
     #title {
         margin-bottom:20px;
@@ -29,10 +30,25 @@
     position: absolute;
     bottom:0;
     right:0;
+    margin:20px;
 
  
     
 }
+
+#menulogoWWU{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    img {
+      cursor: pointer;
+      zoom: 0.1;
+
+    }
+}
+
 
 
 

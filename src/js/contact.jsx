@@ -17,18 +17,18 @@ export default function Contact() {
         </div>
         <div id="contact1">
             <p id="title">Email</p>
-            <p>sibdo.sd@gmail.com</p>
-            <p>+1 (587) 917-2367</p>
+            <p id="email">sibdo.sd@gmail.com</p>
+            <p id="number">+1 (587) 917-2367</p>
         </div>
         <div id="contactImage">
             <img alt ="contactpic" src={contactpic}/>
         </div>
         <div id="contact2">        
             <p id="title">Social Media</p>
-            <p>IG</p>
-            <p>Twitter</p>
-            <p>TikTok</p>
-            <p>Facebook</p>
+            <p id="IG">IG</p>
+            <p id="Twitter">Twitter</p>
+            <p id="TikTok">TikTok</p>
+            <p id="facebook">Facebook</p>
         </div></>
   )
   }

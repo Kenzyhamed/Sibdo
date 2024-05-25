@@ -1,6 +1,5 @@
 import "../scss/Menu.scss";
-import ArrowHead from "../photos/ArrowHead.png";
-import ArrowTail from "../photos/ArrowTail.png";
+import fullArrow from "../photos/fullArrow.png";
 import MenuPic from "../photos/MenuPic.png";
 import React, { useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
@@ -38,13 +37,13 @@ export default function Menu({ open, setOpen }) {
           <p onClick={()=>navigate("/Companies")}>Companies</p>
         </div>
         <div id="MenuContents2">
-          <p onClick={()=>navigate("/WhatWeDid")}>Initiatives</p>
+          <p onClick={()=>navigate("/WhatWereDoing")}>What We're Doing</p>
           <p onClick={()=>navigate("/WorkWithUs")}>Work With Us </p>
           <p onClick={()=>navigate("/Contact")}>Talk To Us</p>
         </div>
       </div>
-      <img id="ArrowHead"  alt="arrowhead"src={ArrowHead} />
-      <img id="ArrowTail" alt="arrowtail" src={ArrowTail} />
+
+      <img id="fullArrow" alt="fullArrow" src={fullArrow} />
       <div id="alt">
         <p>Adam Musa Madibo;</p>
         <p>
