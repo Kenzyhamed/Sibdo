@@ -40,17 +40,17 @@ export default function MainPage() {
                     <div id="left"></div>
                     <div id="right"></div>
                     <div id="maintext3">
-                        <p id="WWA">Who<br/>We<br/>Are</p>
-                        <p id="WWD">What<br/>We<br/>Do</p>
+                        <p onClick={()=>navigate("/WhoAreWe")} id="WWA">Who<br/>We<br/>Are</p>
+                        <p onClick={()=>navigate("/WhatWeDid")} id="WWD">What<br/>We<br/>Do</p>
                     </div>
                 </section>
                 
                 <footer id="footer">
                     <ul>
                         <li onClick={() => navigate('/contact')}>Contact</li>
-                        <li>Careers</li>
+                        <li onClick={() => navigate('/WorkWithUs')}>Careers</li>
                         <li>Initiatives</li>
-                        <li> Work</li>
+                        <li onClick={() => navigate('/WhatWeDid')}> Work</li>
                     </ul>
                 </footer>
             </div>
