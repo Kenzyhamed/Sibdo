@@ -12,14 +12,7 @@ import reportWebVitals from './reportWebVitals';
 import WhatWeDid from './js/WhatWeDid';
 
 const App = () => {
-  useEffect(() => {
-    const screenHeight = window.screen.height;
-    if (screenHeight < 800) {
-      document.body.style.zoom = '0.8';
-    } else {
-      document.body.style.zoom = '1';
-    }
-  }, []);
+
 
   return (
     <BrowserRouter>
