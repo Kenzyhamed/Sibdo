@@ -1,6 +1,6 @@
 import "../scss/Menu.scss";
 import fullArrow from "../photos/fullArrow.png";
-import MenuPic from "../photos/MenuPic.png";
+
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
