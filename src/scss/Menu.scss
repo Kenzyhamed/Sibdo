@@ -7,6 +7,14 @@
     }
 }
 
+
+#page{
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
 #close{
     position: absolute;
     left:0;
@@ -32,7 +40,8 @@
         display: grid;
         grid-template-columns: 2fr 3fr;
         grid-auto-rows: 1fr;
-        height: 100vh; /* Ensure the grid container fills the viewport height */
+        height: 100vh; 
+        margin:auto auto;
     }
     
     #MenuPic {
@@ -69,16 +78,16 @@
 }
 
 #alt{
-    position: absolute;
+    position:fixed;
     bottom: 0;
     left:16rem;
     font-size: .8rem;
 }
 
 #fullArrow{
-    position: relative;
-    bottom: 8rem;
-    left:31.5rem;
+    position: fixed;
+    bottom: 8vw;
+    left:35vw;
     z-index: 999;
 }
 
